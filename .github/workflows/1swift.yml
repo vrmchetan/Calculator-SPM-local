@@ -9,6 +9,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - name: cd directory
+        run: cd calculator-spm-local
       - name: Build
         run: swift build
       - name: Run tests
