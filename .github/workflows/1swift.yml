@@ -12,6 +12,6 @@ jobs:
       - name: cd directory
         run: cd Calculator-package
       - name: Build
-        run: swift build -help
+        run: swift build --force-resolved-versions
       - name: Run tests
         run: swift test
